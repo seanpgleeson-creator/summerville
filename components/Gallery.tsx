@@ -5,8 +5,7 @@ import Image from "next/image";
 import { useReveal } from "./hooks/useReveal";
 
 const PHOTOS: { id: string; label: string; src: string }[] = [
-  { id: "g-fall",   label: "Front — Fall",   src: "/house-fall.png"   },
-  { id: "g-winter", label: "Front — Winter", src: "/house-winter.png" },
+  { id: "g-fall", label: "Front — Fall", src: "/house-fall.png" },
 ];
 
 function GallerySlot({
@@ -29,7 +28,7 @@ function GallerySlot({
         alt={label}
         fill
         className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-        sizes="(max-width: 768px) 100vw, 50vw"
+        sizes="100vw"
       />
       <span
         className="absolute left-[14px] bottom-[12px] z-10 text-[11px] tracking-[0.18em] uppercase text-[#fbf6ec] bg-[rgba(40,50,40,0.55)] backdrop-blur-[3px] px-[11px] py-[5px] rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"
@@ -66,7 +65,7 @@ export default function Gallery() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4">
           {PHOTOS.map((photo) => (
             <GallerySlot
               key={photo.id}
