@@ -44,11 +44,7 @@ export default function Hero() {
         <div className="flex flex-wrap gap-x-[26px] gap-y-[10px] mt-[30px] text-[14px] tracking-[0.06em] uppercase text-[#e9e1d0]">
           <span className="flex items-center gap-[9px]">
             <span className="w-[5px] h-[5px] rounded-full bg-[#ecc98f]" />
-            3 bed · 2 bath
-          </span>
-          <span className="flex items-center gap-[9px]">
-            <span className="w-[5px] h-[5px] rounded-full bg-[#ecc98f]" />
-            Summerville Road
+            20475 Summerville Road
           </span>
           <span className="flex items-center gap-[9px]">
             <span className="w-[5px] h-[5px] rounded-full bg-[#ecc98f]" />

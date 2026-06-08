@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useReveal } from "./hooks/useReveal";
 
 const IMPROVEMENTS = [
@@ -86,13 +87,27 @@ export default function Improvements() {
           </p>
         </div>
 
-        <div
-          ref={gridRef}
-          className="grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-[14px] opacity-0 translate-y-[26px] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(.2,.8,.2,1)] data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
-        >
-          {IMPROVEMENTS.map((card) => (
-            <ImprovementCard key={card.title} {...card} />
-          ))}
+        <div className="flex flex-col lg:flex-row gap-[32px] items-start">
+          <div
+            ref={gridRef}
+            className="flex-1 grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-[14px] opacity-0 translate-y-[26px] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(.2,.8,.2,1)] data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+          >
+            {IMPROVEMENTS.map((card) => (
+              <ImprovementCard key={card.title} {...card} />
+            ))}
+          </div>
+
+          <div className="relative w-full lg:w-[340px] lg:flex-shrink-0 min-h-[380px] rounded-[6px] overflow-hidden"
+            style={{ boxShadow: "0 18px 50px -24px rgba(44,42,35,0.45)" }}
+          >
+            <Image
+              src="/house-winter.png"
+              alt="Front of house — winter"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 340px"
+            />
+          </div>
         </div>
       </div>
     </section>

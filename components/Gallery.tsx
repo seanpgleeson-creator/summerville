@@ -1,18 +1,21 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import Image from "next/image";
 import { useReveal } from "./hooks/useReveal";
 
-const PHOTOS: { id: string; label: string; src?: string }[] = [
-  { id: "g-fall",   label: "Front — Fall"   },
-  { id: "g-winter", label: "Front — Winter" },
+const PHOTOS: { id: string; label: string; src: string }[] = [
+  { id: "g-fall",   label: "Front — Fall",   src: "/house-fall.png"   },
+  { id: "g-winter", label: "Front — Winter", src: "/house-winter.png" },
 ];
 
 function GallerySlot({
   label,
+  src,
   onOpen,
 }: {
   label: string;
+  src: string;
   onOpen: () => void;
 }) {
   return (
@@ -21,9 +24,13 @@ function GallerySlot({
       style={{ boxShadow: "0 18px 50px -24px rgba(44,42,35,0.45)" }}
       onClick={onOpen}
     >
-      <div className="absolute inset-0 flex items-center justify-center text-[#a09880] text-[13px] tracking-[0.18em] uppercase select-none">
-        Photo
-      </div>
+      <Image
+        src={src}
+        alt={label}
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        sizes="(max-width: 768px) 100vw, 50vw"
+      />
       <span
         className="absolute left-[14px] bottom-[12px] z-10 text-[11px] tracking-[0.18em] uppercase text-[#fbf6ec] bg-[rgba(40,50,40,0.55)] backdrop-blur-[3px] px-[11px] py-[5px] rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"
       >
@@ -64,7 +71,8 @@ export default function Gallery() {
             <GallerySlot
               key={photo.id}
               label={photo.label}
-              onOpen={() => photo.src && setLightbox(photo.src)}
+              src={photo.src}
+              onOpen={() => setLightbox(photo.src)}
             />
           ))}
         </div>
