@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Summerville Road — A Home in Cottagewood",
   description:
-    "A charming home in the heart of Cottagewood. Shared privately with friends & neighbors.",
+    "A charming, meticulously maintained home in the heart of Cottagewood. Move in and enjoy it as-is, or make it your own. Shared privately with friends & neighbors.",
 };
 
 export default function RootLayout({

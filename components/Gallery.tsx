@@ -61,7 +61,8 @@ export default function Gallery() {
             </h2>
           </div>
           <p className="text-[#5e584c] max-w-[40ch] m-0">
-            Click any photo to view it full size.
+            Meticulously maintained and full of character — move right in,
+            or bring your own vision. Click any photo to view it full size.
           </p>
         </div>
 
