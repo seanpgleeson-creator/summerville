@@ -50,6 +50,10 @@ export default function Hero() {
           </span>
           <span className="flex items-center gap-[9px]">
             <span className="w-[5px] h-[5px] rounded-full bg-[#ecc98f]" />
+            2 Bed / 1 Bath
+          </span>
+          <span className="flex items-center gap-[9px]">
+            <span className="w-[5px] h-[5px] rounded-full bg-[#ecc98f]" />
             Off-market
           </span>
         </div>

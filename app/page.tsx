@@ -21,7 +21,9 @@ export default function Home() {
       </main>
       <SiteFooter />
       <FloatingContact />
-      <OpenHouseModal />
+      {process.env.NEXT_PUBLIC_SHOW_OPEN_HOUSE_MODAL !== "false" && (
+        <OpenHouseModal />
+      )}
     </>
   );
 }

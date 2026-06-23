@@ -60,10 +60,20 @@ export default function Gallery() {
               The Home.
             </h2>
           </div>
-          <p className="text-[#5e584c] max-w-[40ch] m-0">
-            Meticulously maintained and full of character — move right in,
-            or bring your own vision. Click any photo to view it full size.
-          </p>
+          <div className="max-w-[44ch]">
+            <p className="text-[#5e584c] m-0 mb-[10px]">
+              An open, sun-filled layout with sliding glass doors that extend
+              the living space onto a large front deck. Mature trees frame the
+              view from the living area and front porch, giving the home a
+              genuine sense of privacy and seclusion. Fenced back yard.
+              Click any photo to view it full size.
+            </p>
+            <p className="text-[13px] font-[family-name:var(--font-dm-sans)] tracking-[0.04em] text-[#7a6c55] m-0 border-l-[3px] border-[#b98f44] pl-[10px]">
+              Currently 2 bed / 1 bath — contractor estimates in hand to
+              remodel the lower level into an additional bedroom and bath,
+              bringing it to 3 bed / 2 bath.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-4">
