@@ -49,7 +49,7 @@ export default function Gallery() {
     <section className="relative">
       <div
         ref={ref}
-        className="max-w-[1180px] mx-auto px-[clamp(20px,5vw,54px)] py-[clamp(64px,11vh,130px)] opacity-0 translate-y-[26px] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(.2,.8,.2,1)] data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+        className="max-w-[1180px] mx-auto px-[clamp(20px,5vw,54px)] py-[clamp(64px,11vh,130px)] [.js_&]:opacity-0 [.js_&]:translate-y-[26px] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(.2,.8,.2,1)] data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
       >
         <div className="flex items-end justify-between gap-6 flex-wrap mb-[38px]">
           <div>

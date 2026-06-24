@@ -10,7 +10,7 @@ export default function ContactSection() {
       <div className="max-w-[760px] mx-auto px-[clamp(20px,5vw,54px)] py-[clamp(64px,11vh,130px)] pb-[clamp(70px,12vh,150px)]">
         <div
           ref={ref}
-          className="opacity-0 translate-y-[26px] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(.2,.8,.2,1)] data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+          className="[.js_&]:opacity-0 [.js_&]:translate-y-[26px] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(.2,.8,.2,1)] data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
         >
           <p className="font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.32em] text-[12.5px] font-bold text-[#9c3b2e]">
             Let&apos;s Talk

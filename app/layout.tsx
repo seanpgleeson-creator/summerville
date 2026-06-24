@@ -29,6 +29,12 @@ export default function RootLayout({
       lang="en"
       className={`${fraunces.variable} ${dmSans.variable}`}
     >
+      {/* Synchronously marks <html> with .js so reveal animations only hide
+          content when scripting is confirmed running. Without this, corporate
+          SSL proxies or script blockers leave all sections permanently invisible. */}
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: 'document.documentElement.classList.add("js")' }} />
+      </head>
       <body>{children}</body>
     </html>
   );
