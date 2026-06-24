@@ -38,8 +38,8 @@ export default function Hero() {
           className="text-[clamp(18px,2.2vw,23px)] max-w-[50ch] text-[#f2ecdf] leading-[1.55]"
           style={{ textShadow: "0 1px 16px rgba(0,0,0,0.35)" }}
         >
-          A charming home in the heart of Cottagewood — one of the lake
-          area&rsquo;s most beloved neighborhoods. Move in and enjoy it
+          A charming home in the heart of Cottagewood — one of Lake
+          Minnetonka&rsquo;s most beloved neighborhoods. Move in and enjoy it
           exactly as it is, or make it entirely your own.
         </p>
 

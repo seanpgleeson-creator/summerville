@@ -8,6 +8,7 @@ const HIGHLIGHTS: { place: string; detail: string }[] = [
   { place: "Sandy Beach", detail: "5 min walk" },
   { place: "Rocky Beach", detail: "7–10 min walk" },
   { place: "Downtown Excelsior", detail: "10–15 min bike ride" },
+  { place: "Minnetonka Schools", detail: "" },
 ];
 
 export default function LocationHighlights() {
