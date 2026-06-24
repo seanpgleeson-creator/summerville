@@ -37,6 +37,12 @@ export default function ContactSection() {
             >
               952-393-6886
             </a>
+            <a
+              href="mailto:seanpgleeson@gmail.com?subject=20475%20Summerville%20Road"
+              className="font-[family-name:var(--font-dm-sans)] text-[15px] text-[#5e584c] no-underline mt-[4px] transition-colors hover:text-[#9c3b2e]"
+            >
+              seanpgleeson@gmail.com
+            </a>
             <span className="mt-4 font-[family-name:var(--font-dm-sans)] text-[12px] tracking-[0.16em] uppercase text-[#b98f44]">
               Summerville · Off-Market
             </span>
