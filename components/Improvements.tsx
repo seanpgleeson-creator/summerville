@@ -25,7 +25,7 @@ export default function Improvements() {
       <div className="max-w-[1180px] mx-auto px-[clamp(20px,5vw,54px)] py-[clamp(64px,11vh,130px)]">
         <div
           ref={eyebrowRef}
-          className="[.js_&]:opacity-0 [.js_&]:translate-y-[26px] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(.2,.8,.2,1)] data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+          className="[.js_&]:opacity-0 [.js_&]:translate-y-[26px] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(.2,.8,.2,1)] [.js_&]:data-[visible=true]:opacity-100 [.js_&]:data-[visible=true]:translate-y-0"
         >
           <div className="flex items-center gap-4 mb-[26px]">
             <span className="font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.32em] text-[12.5px] font-bold text-[#9c3b2e]">
@@ -44,7 +44,7 @@ export default function Improvements() {
         <div className="flex flex-col lg:flex-row gap-[32px] items-start">
           <div
             ref={listRef}
-            className="flex-1 [.js_&]:opacity-0 [.js_&]:translate-y-[26px] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(.2,.8,.2,1)] data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+            className="flex-1 [.js_&]:opacity-0 [.js_&]:translate-y-[26px] transition-[opacity,transform] duration-[900ms] ease-[cubic-bezier(.2,.8,.2,1)] [.js_&]:data-[visible=true]:opacity-100 [.js_&]:data-[visible=true]:translate-y-0"
           >
             <ul className="list-none m-0 p-0">
               {IMPROVEMENTS.map(({ item, year }, i) => (
