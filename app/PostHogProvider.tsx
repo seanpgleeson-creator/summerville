@@ -11,13 +11,18 @@ function PostHogPageView() {
   const ph = usePostHog();
 
   useEffect(() => {
-    if (pathname && ph) {
-      const url =
-        window.origin +
-        pathname +
-        (searchParams.toString() ? `?${searchParams.toString()}` : "");
-      ph.capture("$pageview", { $current_url: url });
-    }
+    if (!pathname || !ph) return;
+
+    const url =
+      window.origin +
+      pathname +
+      (searchParams.toString() ? `?${searchParams.toString()}` : "");
+
+    ph.capture("$pageview", { $current_url: url });
+
+    return () => {
+      ph.capture("$pageleave", { $current_url: url });
+    };
   }, [pathname, searchParams, ph]);
 
   return null;
