@@ -4,7 +4,7 @@ export default function SiteFooter() {
       <span className="inline-grid w-[26px] h-[26px] place-items-center border-[1.5px] border-[#3a5740] rounded-full text-[12px] text-[#3a5740] mb-[14px]">
         S
       </span>
-      <div>A home in Summerville &middot; Shared privately with friends &amp; neighbors</div>
+      <div>A home in Cottagewood &middot; Shared privately with friends &amp; neighbors</div>
     </footer>
   );
 }

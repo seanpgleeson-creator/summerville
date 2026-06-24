@@ -26,7 +26,7 @@ export default function Hero() {
 
       <div className="w-full max-w-[1180px] mx-auto px-[clamp(20px,5vw,54px)] pb-[clamp(48px,8vh,96px)] text-[#fbf6ec]">
         <p className="font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.32em] text-[12.5px] font-bold text-[#ecc98f]">
-          Cottagewood
+          Cottagewood &middot; Lake Minnetonka
         </p>
         <h1
           className="font-[family-name:var(--font-fraunces)] font-normal text-[clamp(44px,8vw,104px)] leading-[0.98] tracking-[-0.01em] mt-4 mb-[18px] max-w-[14ch]"
@@ -38,12 +38,16 @@ export default function Hero() {
           className="text-[clamp(18px,2.2vw,23px)] max-w-[50ch] text-[#f2ecdf] leading-[1.55]"
           style={{ textShadow: "0 1px 16px rgba(0,0,0,0.35)" }}
         >
-          A charming home in the heart of Cottagewood — one of Lake
-          Minnetonka&rsquo;s most beloved neighborhoods. Move in and enjoy it
-          exactly as it is, or make it entirely your own.
+          Cottagewood — one of Lake Minnetonka&rsquo;s most beloved
+          neighborhoods. Move in and enjoy it exactly as it is, or make it
+          entirely your own.
         </p>
 
         <div className="flex flex-wrap gap-x-[26px] gap-y-[10px] mt-[30px] text-[14px] tracking-[0.06em] uppercase text-[#e9e1d0]">
+          <span className="flex items-center gap-[9px]">
+            <span className="w-[5px] h-[5px] rounded-full bg-[#ecc98f]" />
+            Cottagewood
+          </span>
           <span className="flex items-center gap-[9px]">
             <span className="w-[5px] h-[5px] rounded-full bg-[#ecc98f]" />
             20475 Summerville Road

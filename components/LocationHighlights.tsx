@@ -35,8 +35,10 @@ export default function LocationHighlights() {
               Cottagewood.
             </h2>
             <p className="text-[#5e584c] max-w-[48ch] m-0 mb-[clamp(32px,5vh,52px)] text-[clamp(16px,1.6vw,18px)] leading-[1.65]">
-              A nod to true Americana — the General Store is the epicenter of
-              this bustling, family-friendly neighborhood.
+              A true Americana neighborhood on the shores of Lake Minnetonka —
+              anchored by a General Store that&rsquo;s been the community
+              gathering place since 1895. Walk to sandy beaches, bike to
+              Excelsior, and send the kids to Minnetonka Schools.
             </p>
 
             <div

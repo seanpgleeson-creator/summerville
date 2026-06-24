@@ -44,7 +44,7 @@ export default function ContactSection() {
               seanpgleeson@gmail.com
             </a>
             <span className="mt-4 font-[family-name:var(--font-dm-sans)] text-[12px] tracking-[0.16em] uppercase text-[#b98f44]">
-              Summerville · Off-Market
+              Cottagewood · Off-Market
             </span>
           </div>
         </div>

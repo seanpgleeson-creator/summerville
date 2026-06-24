@@ -26,14 +26,26 @@ export default function TopBar({ topOffset = 0 }: { topOffset?: number }) {
       <a
         href="#top"
         className={[
-          "flex items-center gap-[11px] font-[family-name:var(--font-fraunces)] text-[18px] tracking-[0.04em] no-underline transition-colors duration-400",
+          "flex items-center gap-[11px] no-underline transition-colors duration-400",
           scrolled ? "text-[#2c2a23]" : "text-[#fbf6ec]",
         ].join(" ")}
       >
-        <span className="w-[26px] h-[26px] flex-none border-[1.5px] border-current rounded-full grid place-items-center text-[12px] tracking-normal">
+        <span className="w-[26px] h-[26px] flex-none border-[1.5px] border-current rounded-full grid place-items-center font-[family-name:var(--font-fraunces)] text-[12px] tracking-normal">
           S
         </span>
-        Summerville Road
+        <span className="flex flex-col leading-none">
+          <span className="font-[family-name:var(--font-fraunces)] text-[18px] tracking-[0.04em]">
+            Summerville Road
+          </span>
+          <span
+            className={[
+              "font-[family-name:var(--font-dm-sans)] text-[10px] font-bold uppercase tracking-[0.22em] mt-[3px]",
+              scrolled ? "text-[#9c3b2e]" : "text-[#ecc98f]",
+            ].join(" ")}
+          >
+            Cottagewood
+          </span>
+        </span>
       </a>
 
       <a
