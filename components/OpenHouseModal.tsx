@@ -59,7 +59,7 @@ export default function OpenHouseModal() {
         </h2>
 
         <p className="font-[family-name:var(--font-dm-sans)] text-[15px] font-bold tracking-[0.06em] uppercase text-[#b98f44] m-0 mb-[20px]">
-          Saturday, June 27th &nbsp;·&nbsp; 11:00 AM – 12:00 PM
+          Saturday, June 27th &nbsp;·&nbsp; 10:00 AM – 11:00 AM
         </p>
 
         <p className="text-[#5e584c] text-[16px] leading-[1.6] m-0 mb-[32px]">
