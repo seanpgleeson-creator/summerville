@@ -2,20 +2,21 @@
 
 import { useEffect, useState } from "react";
 
-export default function TopBar() {
+export default function TopBar({ topOffset = 0 }: { topOffset?: number }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
+    const onScroll = () => setScrolled(window.scrollY > 60 + topOffset);
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [topOffset]);
 
   return (
     <header
+      style={{ top: topOffset }}
       className={[
-        "fixed top-0 left-0 right-0 z-60 flex items-center justify-between transition-all duration-400",
+        "fixed left-0 right-0 z-60 flex items-center justify-between transition-all duration-400",
         "px-[clamp(20px,5vw,54px)]",
         scrolled
           ? "bg-[rgba(245,239,227,0.92)] backdrop-blur-[10px] shadow-[0_1px_0_rgba(44,42,35,0.15)] py-[13px]"
