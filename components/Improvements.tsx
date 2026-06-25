@@ -4,9 +4,11 @@ import Image from "next/image";
 import { useReveal } from "./hooks/useReveal";
 
 const IMPROVEMENTS: { item: string; year: string }[] = [
+  { item: "New RO, water softener and filtration system (owned)", year: "2021" },
   { item: "Exterior paint", year: "2022" },
   { item: "All new outdoor light fixtures", year: "2022" },
-  { item: "New deck and deck railing", year: "2023" },
+  { item: "New AC", year: "2022" },
+  { item: "New maintenance free deck and railing", year: "2023" },
   { item: "Gutter added under front of house / deck area", year: "2023" },
   { item: "Dishwasher added", year: "2023" },
   { item: "New washer and dryer", year: "2023" },
